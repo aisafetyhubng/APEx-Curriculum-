@@ -78,7 +78,7 @@
       top: 0; left: 0; right: 0;
       z-index: 100;
       display: flex;
-      align-items: center;
+      
       justify-content: space-between;
       padding: 1rem 3rem;
       background: rgba(247,243,237,0.88);
@@ -88,7 +88,7 @@
 
     .nav-logo {
       display: flex;
-      align-items: center;
+      
       gap: 0.6rem;
       text-decoration: none;
     }
@@ -136,12 +136,12 @@
 
     /* ── HERO ── */
     .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+      min-height: auto;
+      display: block;
+      
+      
       position: relative;
-      padding: 8rem 3rem 4rem;
+      padding: 4rem 8rem 4rem;
       gap: 2rem;
       overflow: hidden;
     }
@@ -166,7 +166,7 @@
 
     .hero-eyebrow {
       display: inline-flex;
-      align-items: center;
+      
       gap: 0.5rem;
       font-size: 0.75rem;
       font-weight: 500;
@@ -207,7 +207,7 @@
       font-weight: 300;
       line-height: 1.75;
       color: var(--muted);
-      max-width: 480px;
+      
       margin-bottom: 2.5rem;
       opacity: 0;
       animation: fadeUp 0.8s 0.4s forwards;
@@ -244,7 +244,7 @@
     .hero-illustration {
       display: flex;
       justify-content: center;
-      align-items: center;
+      
       opacity: 0;
       animation: fadeIn 1.2s 0.5s forwards;
     }
@@ -279,7 +279,7 @@
       color: var(--teal);
       margin-bottom: 1.2rem;
       display: flex;
-      align-items: center;
+      
       gap: 0.5rem;
     }
 
@@ -351,7 +351,7 @@
     }
 
     .how-grid {
-      display: grid;
+      display: block;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
@@ -422,7 +422,7 @@
 
     /* ── WEEK CARD ── */
     .week-card {
-      display: grid;
+      display: block;
       grid-template-columns: 280px 1fr;
       border-radius: 20px;
       overflow: hidden;
@@ -447,7 +447,7 @@
     .week-card-visual {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      
       justify-content: center;
       padding: 2rem;
       position: relative;
@@ -497,7 +497,7 @@
       text-transform: uppercase;
       margin-bottom: 0.8rem;
       display: flex;
-      align-items: center;
+      
       gap: 0.4rem;
     }
 
@@ -543,7 +543,7 @@
 
     .week-card-footer {
       display: flex;
-      align-items: center;
+      
       justify-content: space-between;
       padding-top: 1.2rem;
       border-top: 1px solid var(--cream-dark);
@@ -557,7 +557,7 @@
 
     .week-cta {
       display: inline-flex;
-      align-items: center;
+      
       gap: 0.5rem;
       font-size: 0.85rem;
       font-weight: 500;
@@ -578,7 +578,7 @@
     /* ── OPTIONAL BADGE ── */
     .optional-label {
       display: inline-flex;
-      align-items: center;
+      
       gap: 0.4rem;
       font-size: 0.72rem;
       font-weight: 500;
@@ -644,7 +644,7 @@
     }
 
     .footer-top {
-      display: grid;
+      display: block;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 3rem;
       padding-bottom: 3rem;
@@ -695,7 +695,7 @@
     .footer-bottom {
       padding-top: 2rem;
       display: flex;
-      align-items: center;
+      
       justify-content: space-between;
     }
 
@@ -778,8 +778,8 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#curriculum">Curriculum</a></li>
-      <li><a href="https://aisafetyhubng.lovable.app" target="_blank">Main Site</a></li>
-      <li><a href="https://aisafetyhubng.github.io/apex-survey" target="_blank" class="nav-apply">Apply to APEx</a></li>
+      <li><a href="https://aisafetyhubng.lovable.app" target="_blank">ASH Nigeria</a></li>
+      <li><a href="https://aisafetyhubng.github.io/apex-survey" target="_blank" class="nav-apply">APEx Survey</a></li>
     </ul>
   </nav>
 
@@ -794,128 +794,30 @@
     <div class="hero-bg-circle hero-bg-circle-1"></div>
     <div class="hero-bg-circle hero-bg-circle-2"></div>
 
-    <div class="hero-left">
-      <div class="hero-eyebrow">APEx Programme — Curriculum</div>
-      <h1 class="hero-title">
-        Your roadmap into<br/><em>AI safety</em> work.
-      </h1>
-      <p class="hero-body">
-        This is the full curriculum for the AI Safety Pathways Exploration Programme. Four weeks of structured, annotated learning designed specifically for Nigerian and African students who are ready to take AI safety seriously and find out exactly where they belong in it.
-      </p>
-      <div class="hero-meta">
-        <div class="hero-stat">
-          <span class="hero-stat-num">5</span>
-          <span class="hero-stat-label">Weeks of Content</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">4–5h</span>
-          <span class="hero-stat-label">Per Week</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">Free</span>
-          <span class="hero-stat-label">No Cost, Ever</span>
-        </div>
+    <div class="hero-eyebrow">APEx Programme — Curriculum</div>
+    <h1 class="hero-title">
+      Your roadmap into<br/><em>AI safety</em> work.
+    </h1>
+    <p class="hero-body">
+      This is the full curriculum for the AI Safety Pathways Exploration Programme. Four weeks of structured, annotated learning designed specifically for Nigerian and African students who are ready to take AI safety seriously and find out exactly where they belong in it.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-stat">
+        <span class="hero-stat-num">5</span>
+        <span class="hero-stat-label">Weeks of Content</span>
       </div>
-    </div>
-
-    <div class="hero-illustration">
-      <!-- Hero SVG Illustration: Figure studying a glowing map of pathways -->
-      <svg width="460" height="420" viewBox="0 0 460 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background glow -->
-        <ellipse cx="230" cy="340" rx="160" ry="30" fill="rgba(0,168,157,0.12)"/>
-
-        <!-- Desk surface -->
-        <rect x="60" y="300" width="340" height="16" rx="8" fill="#D4CFC8"/>
-        <rect x="100" y="316" width="14" height="60" rx="7" fill="#C0BAB2"/>
-        <rect x="346" y="316" width="14" height="60" rx="7" fill="#C0BAB2"/>
-
-        <!-- Laptop screen glow -->
-        <rect x="130" y="170" width="200" height="136" rx="12" fill="var(--navy)" class="float-svg"/>
-        <rect x="138" y="178" width="184" height="120" rx="8" fill="#0D2E3C" class="float-svg"/>
-        <!-- Screen content: node map -->
-        <circle cx="230" cy="225" r="14" fill="var(--teal)" opacity="0.9" class="float-svg"/>
-        <circle cx="175" cy="248" r="9" fill="#6C63A6" opacity="0.85" class="float-svg"/>
-        <circle cx="285" cy="248" r="9" fill="#E07A5F" opacity="0.85" class="float-svg"/>
-        <circle cx="155" cy="215" r="7" fill="#2D9E6B" opacity="0.7" class="float-svg"/>
-        <circle cx="305" cy="210" r="7" fill="#F5A623" opacity="0.7" class="float-svg"/>
-        <line x1="230" y1="225" x2="175" y2="248" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" class="float-svg"/>
-        <line x1="230" y1="225" x2="285" y2="248" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" class="float-svg"/>
-        <line x1="175" y1="248" x2="155" y2="215" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" class="float-svg"/>
-        <line x1="285" y1="248" x2="305" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" class="float-svg"/>
-        <!-- Screen glow -->
-        <rect x="138" y="178" width="184" height="120" rx="8" fill="url(#screenGlow)" opacity="0.15" class="float-svg"/>
-
-        <!-- Laptop base -->
-        <rect x="120" y="304" width="220" height="10" rx="5" fill="#B8B0A6"/>
-
-        <!-- Human figure: seated, reading -->
-        <!-- Torso -->
-        <rect x="198" y="235" width="44" height="56" rx="14" fill="#F5C4A0"/>
-        <!-- Head -->
-        <circle cx="220" cy="218" r="26" fill="#F5C4A0"/>
-        <!-- Hair -->
-        <ellipse cx="220" cy="198" rx="26" ry="12" fill="#2C1810"/>
-        <rect x="194" y="198" width="52" height="16" rx="8" fill="#2C1810"/>
-        <!-- Eyes -->
-        <ellipse cx="211" cy="218" rx="4" ry="4.5" fill="#1A2E3B"/>
-        <ellipse cx="229" cy="218" rx="4" ry="4.5" fill="#1A2E3B"/>
-        <circle cx="212.5" cy="216.5" r="1.5" fill="white"/>
-        <circle cx="230.5" cy="216.5" r="1.5" fill="white"/>
-        <!-- Smile -->
-        <path d="M213 226 Q220 231 227 226" stroke="#D4956A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-        <!-- Shirt/clothes -->
-        <rect x="198" y="255" width="44" height="36" rx="8" fill="#1A7A72"/>
-        <!-- Arms: left pointing toward screen -->
-        <rect x="163" y="255" width="38" height="16" rx="8" fill="#F5C4A0" transform="rotate(-15 163 255)"/>
-        <rect x="225" y="255" width="38" height="16" rx="8" fill="#F5C4A0" transform="rotate(15 225 255)"/>
-        <!-- Hands -->
-        <circle cx="163" cy="270" r="8" fill="#F5C4A0"/>
-        <circle cx="262" cy="270" r="8" fill="#F5C4A0"/>
-
-        <!-- Floating icons around the figure -->
-        <!-- Book icon top left -->
-        <g transform="translate(75, 130)" class="float-svg-slow">
-          <rect width="38" height="48" rx="5" fill="#00A89D" opacity="0.9"/>
-          <rect x="6" y="10" width="26" height="3" rx="1.5" fill="white" opacity="0.7"/>
-          <rect x="6" y="18" width="20" height="3" rx="1.5" fill="white" opacity="0.5"/>
-          <rect x="6" y="26" width="24" height="3" rx="1.5" fill="white" opacity="0.5"/>
-          <rect x="6" y="34" width="16" height="3" rx="1.5" fill="white" opacity="0.4"/>
-        </g>
-
-        <!-- Certificate icon top right -->
-        <g transform="translate(345, 110)" class="float-svg-slow">
-          <rect width="46" height="38" rx="6" fill="#6C63A6" opacity="0.9"/>
-          <circle cx="23" cy="19" r="8" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
-          <path d="M19 19 L22 22 L27 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.9"/>
-        </g>
-
-        <!-- Compass/direction icon bottom left -->
-        <g transform="translate(68, 240)" class="float-svg">
-          <circle cx="20" cy="20" r="20" fill="#E07A5F" opacity="0.9"/>
-          <circle cx="20" cy="20" r="14" fill="none" stroke="white" stroke-width="1.5" opacity="0.6"/>
-          <path d="M20 8 L23 20 L20 32 L17 20 Z" fill="white" opacity="0.9"/>
-          <path d="M8 20 L20 17 L32 20 L20 23 Z" fill="rgba(255,255,255,0.5)"/>
-          <circle cx="20" cy="20" r="3" fill="white"/>
-        </g>
-
-        <!-- Star/spark top center -->
-        <g transform="translate(327, 158)" class="float-svg-slow">
-          <circle cx="16" cy="16" r="16" fill="#2D9E6B" opacity="0.9"/>
-          <path d="M16 5 L17.8 12.2 L25 13 L19.5 18 L21 25 L16 21.5 L11 25 L12.5 18 L7 13 L14.2 12.2 Z" fill="white" opacity="0.9"/>
-        </g>
-
-        <!-- Defs -->
-        <defs>
-          <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="var(--teal)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-      </svg>
+      <div class="hero-stat">
+        <span class="hero-stat-num">4–5h</span>
+        <span class="hero-stat-label">Per Week</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Free</span>
+        <span class="hero-stat-label">No Cost, Ever</span>
+      </div>
     </div>
   </section>
 
-  <!-- INTRO -->
+    <!-- INTRO -->
   <section class="intro" id="about">
     <div class="intro-inner">
       <div class="section-label">About This Curriculum</div>
@@ -935,8 +837,8 @@
         <span class="pill pill-white">Virtual and free</span>
         <span class="pill pill-white">Nigeria and Africa focused</span>
         <span class="pill pill-white">Cohort-based learning</span>
-      </div>
-    </div>
+  
+
   </section>
 
   <!-- HOW TO USE -->
@@ -949,19 +851,19 @@
           <div class="how-card-num" style="color:#D4EBE9;">01</div>
           <div class="how-card-title">Read before the session</div>
           <div class="how-card-body">Each week has required pre-session readings. These are non-negotiable. The facilitated discussion assumes you have done the reading. Completing recommended readings is encouraged for participants considering a specific pathway.</div>
-        </div>
+    
         <div class="how-card">
           <div class="how-card-num" style="color:#D4EBE9;">02</div>
           <div class="how-card-title">Engage with the exercises</div>
           <div class="how-card-body">Reflection exercises and skill audits are not homework. They are how you build your Personal Pathway Plan, which is the main deliverable you leave the programme with. They are worth taking seriously.</div>
-        </div>
+    
         <div class="how-card">
           <div class="how-card-num" style="color:#D4EBE9;">03</div>
           <div class="how-card-title">Access is managed per cohort</div>
           <div class="how-card-body">Each week's document is linked below. Access is granted to enrolled participants. If a link prompts you to request access, apply to the current APEx cohort through the main programme page.</div>
-        </div>
-      </div>
-    </div>
+    
+  
+
   </section>
 
   <!-- WEEKS -->
@@ -970,9 +872,9 @@
       <div>
         <div class="section-label">The Curriculum</div>
         <h2 class="weeks-title">Five weeks.<br/>One clear direction.</h2>
-      </div>
+  
       <p class="weeks-note">Each card links to the full week document. Access is managed per cohort.</p>
-    </div>
+
 
     <!-- WEEK 0 -->
     <div class="week-card" data-week="0">
@@ -997,13 +899,13 @@
           <rect x="68" y="122" width="24" height="18" rx="8" fill="rgba(255,255,255,0.3)"/>
         </svg>
         <span class="week-card-number">0</span>
-      </div>
+  
       <div class="week-card-content">
         <div class="week-card-top">
           <div class="optional-label">
             <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
             Optional — No AI Background? Start Here
-          </div>
+      
           <h3 class="week-card-title">Are You AI Safety Ready?</h3>
           <p class="week-card-desc">A foundation-building module for participants who have little or no prior knowledge of AI or AI safety and want to build enough grounding before Week 1 begins. If you already have a working understanding of AI concepts, you can skip this and join directly from Week 1.</p>
           <div class="week-topics">
@@ -1011,17 +913,17 @@
             <span class="week-topic">Terminology calibration</span>
             <span class="week-topic">Setting learning intentions</span>
             <span class="week-topic">Gap identification</span>
-          </div>
-        </div>
+      
+    
         <div class="week-card-footer">
           <span class="week-meta">Optional &nbsp;·&nbsp; 2–3 hrs &nbsp;·&nbsp; Self-paced</span>
           <a href="https://docs.google.com/document/d/1OhIDaL7uR_ICo1Mc_qO-QywJdXG7zPJArDOvH2X7x_g/edit?usp=drivesdk" target="_blank" rel="noopener" class="week-cta cta-w0">
             Open Week 0
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-    </div>
+    
+  
+
 
     <!-- WEEK 1 -->
     <div class="week-card" data-week="1">
@@ -1047,13 +949,13 @@
           <text x="115" y="48" fill="white" font-size="18" font-weight="bold" opacity="0.8" font-family="serif">?</text>
         </svg>
         <span class="week-card-number">1</span>
-      </div>
+  
       <div class="week-card-content">
         <div class="week-card-top">
           <div class="week-tag tag-w1">
             <span class="week-tag-dot dot-w1"></span>
             Core — Week 1
-          </div>
+      
           <h3 class="week-card-title">What Is AI Safety Really?</h3>
           <p class="week-card-desc">Map the full AI safety landscape: technical alignment, governance, and the representation gaps that make this conversation urgent in Nigeria and across Africa. Correct your mental model before building on it.</p>
           <div class="week-topics">
@@ -1063,17 +965,17 @@
             <span class="week-topic">Global South context</span>
             <span class="week-topic">Representation in AI safety</span>
             <span class="week-topic">Ethical implications</span>
-          </div>
-        </div>
+      
+    
         <div class="week-card-footer">
           <span class="week-meta">Required &nbsp;·&nbsp; 4–5 hrs &nbsp;·&nbsp; Facilitated</span>
           <a href="https://docs.google.com/document/d/1nFCnsZvMHD_aA1QSt61Lpu-S4C6zvzbcpVuQxlifjqc/edit?usp=drivesdk" target="_blank" rel="noopener" class="week-cta cta-w1">
             Open Week 1
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-    </div>
+    
+  
+
 
     <!-- WEEK 2 -->
     <div class="week-card" data-week="2">
@@ -1100,13 +1002,13 @@
           <line x1="80" y1="96" x2="80" y2="108" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
         <span class="week-card-number">2</span>
-      </div>
+  
       <div class="week-card-content">
         <div class="week-card-top">
           <div class="week-tag tag-w2">
             <span class="week-tag-dot dot-w2"></span>
             Core — Week 2
-          </div>
+      
           <h3 class="week-card-title">The Different Pathways</h3>
           <p class="week-card-desc">Explore the full range of ways to contribute to AI safety: technical research, governance and policy, responsible AI in industry, field-building, communications, and strategy. Start narrowing down where you actually belong.</p>
           <div class="week-topics">
@@ -1116,17 +1018,17 @@
             <span class="week-topic">Field-building</span>
             <span class="week-topic">Strategic development</span>
             <span class="week-topic">Knowledge translation</span>
-          </div>
-        </div>
+      
+    
         <div class="week-card-footer">
           <span class="week-meta">Required &nbsp;·&nbsp; 4–5 hrs &nbsp;·&nbsp; Facilitated</span>
           <a href="https://docs.google.com/document/d/1oznfHsqWxN2_9E1-xFBiAABzYkDhrUDgoa1bPD5yYu8/edit?usp=drivesdk" target="_blank" rel="noopener" class="week-cta cta-w2">
             Open Week 2
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-    </div>
+    
+  
+
 
     <!-- WEEK 3 -->
     <div class="week-card" data-week="3">
@@ -1156,13 +1058,13 @@
           <text x="113" y="46" fill="white" font-size="16" opacity="0.9">✦</text>
         </svg>
         <span class="week-card-number">3</span>
-      </div>
+  
       <div class="week-card-content">
         <div class="week-card-top">
           <div class="week-tag tag-w3">
             <span class="week-tag-dot dot-w3"></span>
             Core — Week 3
-          </div>
+      
           <h3 class="week-card-title">From Exploration to Action</h3>
           <p class="week-card-desc">This is where exploration becomes direction. Complete a guided skill audit, work through your values and impact reflection, and build your Personal Pathway Plan: the concrete document you leave the programme with.</p>
           <div class="week-topics">
@@ -1172,17 +1074,17 @@
             <span class="week-topic">Skill audit exercise</span>
             <span class="week-topic">Long vs short-term thinking</span>
             <span class="week-topic">Personal Pathway Plan</span>
-          </div>
-        </div>
+      
+    
         <div class="week-card-footer">
           <span class="week-meta">Required &nbsp;·&nbsp; 4–5 hrs &nbsp;·&nbsp; Facilitated</span>
           <a href="https://docs.google.com/document/d/1j4OLLBxCQOTRvtCyA5AB1AazcJcjy5GuiiXgl-3wjH4/edit?usp=drivesdk" target="_blank" rel="noopener" class="week-cta cta-w3">
             Open Week 3
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-    </div>
+    
+  
+
 
     <!-- WEEK 4 -->
     <div class="week-card" data-week="4">
@@ -1212,13 +1114,13 @@
           <text x="74" y="40" fill="white" font-size="12" opacity="0.9">★</text>
         </svg>
         <span class="week-card-number">4</span>
-      </div>
+  
       <div class="week-card-content">
         <div class="week-card-top">
           <div class="week-tag tag-w4">
             <span class="week-tag-dot dot-w4"></span>
             Core — Week 4
-          </div>
+      
           <h3 class="week-card-title">Presentation &amp; Mentorship Matching</h3>
           <p class="week-card-desc">Present your Personal Pathway Plan, receive structured feedback from the cohort and facilitators, and connect with mentors. Top performers receive referrals to fellowships, organisations, and research collaboration opportunities.</p>
           <div class="week-topics">
@@ -1228,17 +1130,17 @@
             <span class="week-topic">Fellowship referrals</span>
             <span class="week-topic">Research collaboration</span>
             <span class="week-topic">Fellowship track connections</span>
-          </div>
-        </div>
+      
+    
         <div class="week-card-footer">
           <span class="week-meta">Required &nbsp;·&nbsp; 4–5 hrs &nbsp;·&nbsp; Facilitated</span>
           <a href="https://docs.google.com/document/d/1qurScXFYulEkISJ_Ii3K1UHqmF-APHcxrhA2s9XCmcc/edit?usp=drivesdk" target="_blank" rel="noopener" class="week-cta cta-w4">
             Open Week 4
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-    </div>
+    
+  
+
 
   </section>
 
@@ -1249,7 +1151,7 @@
         <div>
           <div class="footer-brand-name">AI Safety Hub Nigeria</div>
           <div class="footer-brand-sub">Building Nigeria and Africa's pipeline into global AI safety research, education, and governance.</div>
-        </div>
+    
         <div>
           <div class="footer-col-title">Programme</div>
           <ul class="footer-links">
@@ -1258,7 +1160,7 @@
             <li><a href="https://aisafetyhubng.github.io/apex-survey" target="_blank">Take the APEx Survey</a></li>
             <li><a href="https://aisafetyhubng.github.io/apex-curriculum">Curriculum</a></li>
           </ul>
-        </div>
+    
         <div>
           <div class="footer-col-title">Connect</div>
           <ul class="footer-links">
@@ -1266,13 +1168,13 @@
             <li><a href="https://linkedin.com/company/aisafetyhubng" target="_blank">LinkedIn</a></li>
             <li><a href="https://instagram.com/aisafetyhubng" target="_blank">Instagram @aisafetyhubng</a></li>
           </ul>
-        </div>
-      </div>
+    
+  
       <div class="footer-bottom">
         <span class="footer-copy">© 2026 AI Safety Hub Nigeria. All rights reserved.</span>
         <span class="footer-teal-dot"></span>
-      </div>
-    </div>
+  
+
   </footer>
 
   <script>
